@@ -1,0 +1,62 @@
+# --- Training outputs (never commit) ---
+logs/
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# --- Datasets ---
+data/
+datasets/
+dataset/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.tfrecord
+*.lmdb
+*.cache
+
+# --- Model weights (usually > 50 MB) ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.engine
+*.tflite
+*.pb
+
+# --- Media ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Python / env ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Files > 50 MB: also blocked by the local pre-commit hook (.git/hooks/pre-commit).
+# If one ever shows up in `git status`, add its path below:
